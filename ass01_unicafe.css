@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+}
+.nav {
+    height: 25vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(89, 184, 89);
+    margin: 0;
+    padding: 0; 
+}
+
+.nav img {
+    position: absolute;
+    left: 20px;
+    width: 150px; 
+    height: auto;
+}
+.nav h1 {
+    flex: 1;
+    text-align: center;
+    color: green; /* Main text color */
+    background-color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+}
+/* Logo Section */
+.logo {
+    height: 50vh;
+    width: 100%;
+    background-image: url("cafemain.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 4px solid rgb(89, 184, 89); /* Added separator */
+}
+
+.container {
+    margin-top: 5vh;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px; /* Adds spacing between items */
+}
+
+/* Individual Items */
+.container div {
+    height: 58vh;
+    width: 45vh; /* Reduced width for better alignment */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 10px; 
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(8, 112, 43, 0.2); /* Adds a subtle shadow */
+}
+
+.container div a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #22bac5;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container div a:hover {
+    background-color: rgb(69, 218, 69);
+    transform: scale(1.1); /* Enlarges the button slightly on hover */
+}
+
+.item1 {
+    background: url('Menu.png') center / cover no-repeat;
+}
+
+.item2 {
+    background: url('coffee.jpg') center / cover no-repeat;
+}
+
+.item3 {
+    background: url('cafebackground.jpeg') center / cover no-repeat;
+}
+
+/* Description Section */
+.description {
+    padding: 20px 40px; /* Added horizontal padding */
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background-color: rgb(230, 255, 240);
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    text-align: center;
+    color: #333;
+    margin-top: 20px; /* Adds spacing between sections */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Adds depth */
+    border-radius: 10px;
+}
+

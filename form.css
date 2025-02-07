@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  background-color: #695bcc;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center; /* Keeps label and input on the same line */
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* Allows elements to wrap if needed */
+  gap: 10px; /* Adds spacing between label and input */
+}
+
+.form-group label {
+  width: 130px; 
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 250px; /* Set fixed width for shorter inputs */
+  padding: 5px;
+  border: 1px solid #231d1d;
+  border-radius: 5px;
+}
+
+/* Ensures gender and hobbies checkboxes align properly */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  width: auto; /* Prevents them from stretching */
+}
+
+/* Adjust country dropdown width */
+.form-group select {
+  width: auto;
+  min-width: 150px; /* Ensures dropdown is readable */
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  border: 2px solid #191818;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+/* Ensures table inputs do not stretch */
+table input[type="text"], 
+table input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.buttonn {
+  gap: 10px; 
+}
+
+button {
+  background-color: #603b7e;
+  color: rgb(243, 243, 243);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  text-align: center; 
+  min-width: 120px; 
+}
+
+button:hover {
+  background-color: #3e8b3e;
+}
+

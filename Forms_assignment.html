@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="first-name">FIRST NAME</label> 
+        <input type="text" id="first-name"  maxlength="30" pattern="[a-zA-Z]+" placeholder="(max 30 characters a-z and A-Z)" required>
+      </div>
+     
+      <div class="form-group">
+        <label for="last-name">LAST NAME</label> 
+        <input type="text" id="last-name"  maxlength="30" pattern="[a-zA-Z]+" placeholder="(max 30 characters a-z and A-Z)" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="dob">DATE OF BIRTH</label> 
+        <input type="date" id="dob"  required>
+      </div>
+     
+      <div class="form-group">
+        <label for="email">EMAIL ID</label> 
+        <input type="email" id="email"  placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">MOBILE NUMBER</label>
+        <input type="tel" id="mobile"  pattern="[0-9]{10}" placeholder="10-digit number" required>
+      </div>
+
+      <div class="form-group">
+        <label>GENDER</label> 
+        <div class="radio-group"> 
+          <input type="radio" id="male" name="gender" value="Male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" required>
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <label for="address">ADDRESS</label>
+      <div class="form-group"> 
+        <textarea id="address"  rows="4" placeholder="Enter your address" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="city">CITY</label>
+        <input type="text" id="city"  maxlength="30" pattern="[a-zA-Z]+" placeholder="(max 30 characters a-z and A-Z)" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pincode">PIN CODE</label>
+        <input type="text" id="pincode"  pattern="[0-9]{6}" placeholder="6-digit number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="state">STATE</label>
+        <input type="text" id="state"  maxlength="30" pattern="[a-zA-Z]+" placeholder="(max 30 characters a-z and A-Z)" required>
+      </div>
+
+      <div class="form-group">
+        <label for="country">COUNTRY</label>
+        <input type="text" id="country"  value="Pakistan" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>HOBBIES</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="drawing" name="hobbies" value="drawing">
+          <label for="drawing">Drawing</label>
+          <input type="checkbox" id="singing" name="hobbies" value="singing">
+          <label for="singing">Singing</label>
+          <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+          <label for="dancing">Dancing</label>
+          <input type="checkbox" id="sketching" name="hobbies" value="sketching">
+          <label for="sketching">Sketching</label>
+          <input type="checkbox" id="others" name="hobbies" value="others">
+          <label for="others">Others</label>
+        <input type="text"  placeholder="Enter your hobby">
+      </div>
+
+      <!-- Qualification -->
+      <div class="form-group">
+        <label>QUALIFICATION</label>
+        <table>
+          <thead>
+            <tr>
+              <th>Sl.No.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input type="text" maxlength="10"></td>
+              <td><input type="number" step="0.01" max="100"></td>
+              <td><input type="number" maxlength="4"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" maxlength="10"></td>
+              <td><input type="number" step="0.01" max="100"></td>
+              <td><input type="number" maxlength="4"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" maxlength="10"></td>
+              <td><input type="number" step="0.01" max="100"></td>
+              <td><input type="number" maxlength="6"></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" maxlength="30"></td>
+              <td><input type="number" step="0.01" max="100"></td>
+              <td><input type="number" maxlength="4"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+<br><br>
+<div class="form-group">
+  <label>COURSES APPLIED FOR</label>  
+  <label><input type="radio" name="course" value="BCA"> BCA</label>
+  <label><input type="radio" name="course" value="BCom"> B.Com</label>
+  <label><input type="radio" name="course" value="BSc"> B.Sc</label>
+  <label><input type="radio" name="course" value="BA"> B.A</label>
+</div>
+<div class="buttonn" style="display: flex; justify-content: center;">
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</div>
+    </form>
+  </div>
+</body>
+</html>
+
