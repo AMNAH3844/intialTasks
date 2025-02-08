@@ -43,7 +43,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    border-bottom: 4px solid rgb(89, 184, 89); /* Added separator */
+    border-bottom: 4px solid rgb(89, 184, 89); /* Add separator */
 }
 
 .container {
@@ -60,7 +60,7 @@
 /* Individual Items */
 .container div {
     height: 58vh;
-    width: 45vh; /* Reduced width for better alignment */
+    width: 45vh; /* width for better alignment */
     background-size: cover;
     background-position: center;
     border: 2px solid black;

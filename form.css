@@ -16,11 +16,11 @@ body {
 
 .form-group {
   display: flex;
-  align-items: center; /* Keeps label and input on the same line */
+  align-items: center;  /* Keeps label and input on the same line */
   justify-content: flex-start;
   margin-bottom: 10px;
   flex-wrap: wrap; /* Allows elements to wrap if needed */
-  gap: 10px; /* Adds spacing between label and input */
+  gap: 10px;   /* Adds spacing between label and input */
 }
 
 .form-group label {
@@ -38,7 +38,7 @@ body {
   border-radius: 5px;
 }
 
-/* Ensures gender and hobbies checkboxes align properly */
+
 .radio-group,
 .checkbox-group {
   display: flex;
@@ -52,10 +52,10 @@ body {
   width: auto; /* Prevents them from stretching */
 }
 
-/* Adjust country dropdown width */
+
 .form-group select {
   width: auto;
-  min-width: 150px; /* Ensures dropdown is readable */
+  min-width: 150px; /* dropdown is readable */
 }
 
 table {
